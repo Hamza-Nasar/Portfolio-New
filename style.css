@@ -1,0 +1,123 @@
+/* client/style.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero {
+    padding: 100px 20px;
+}
+
+nav a {
+    color: #00f7ff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-section {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    background-color: #181818;
+    border-radius: 10px;
+}
+
+.about-section h2,
+.about-section h3 {
+    color: #00f7ff;
+}
+
+.about-section ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.projects-section {
+    display: grid;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project-card {
+    background: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #00f7ff;
+}
+
+.project-card h2 {
+    margin-bottom: 10px;
+    color: #00f7ff;
+}
+
+.project-card a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contact-section {
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #00f7ff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Smooth transitions */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Link underline animation */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #00f7ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
